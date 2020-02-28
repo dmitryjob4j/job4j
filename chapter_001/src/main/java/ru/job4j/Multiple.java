@@ -1,7 +1,6 @@
 package ru.job4j;
 
 public class Multiple {
-    //Метод вывод на экран таблицы умножение на 1
     public static void main(String[] args){
         System.out.println("1*1=1");
         System.out.println("1*2=2");

@@ -10,9 +10,9 @@ public class Fit {
         return rls;
     }
     public static void main(String[] args) {
-        double man = Fit.manWeight(190); //идеальный мужчины при росте 190 см
-        double woman = Fit.womanWeight(175); //идеальный вес женщины при росте 175 см
-        System.out.println("Man 190 sm is " + man + " kg");
-        System.out.println("Woman 175 sm is " + woman + " kg");
+        double man = Fit.manWeight(190);
+        double woman = Fit.womanWeight(175);
+        System.out.println("Man 190 sm is " + man);
+        System.out.println("Woman 175 sm is " + woman);
     }
 }
