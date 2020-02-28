@@ -7,7 +7,7 @@ public class ConverterTest {
     public void rubleToEuro() {
         int in = 140; // количество евро, переменная для метода
         int expected = 2; // предпологаемое значение при цене 1 Euvro = 70 р
-        int out = Converter.rubleToEvro(in); // значение которое выдает метод
+        int out = Converter.rubleToEuro(in); // значение которое выдает метод
         Assert.assertEquals(expected, out); // тестирование и сравнение предпологаемого значения и результата метода
     }
     @Test
