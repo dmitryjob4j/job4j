@@ -12,8 +12,8 @@ public class CheckPrimeNumber {
             //проверяем числа от 2 до number - 1 делимость по модулю
             if (number % index == 0) {
                 prime = false;
-                //иначе число простое
-            } else break;
+                break;
+            }
         }
             }
         return prime;
