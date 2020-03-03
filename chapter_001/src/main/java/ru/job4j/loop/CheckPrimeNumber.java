@@ -7,15 +7,16 @@ public class CheckPrimeNumber {
         if (number == 1) {
          prime = false;
         }
-        else{
-            for (int index = 2; index <= number; index++) {
-                //проверяем числа от 2 до number - 1 делимость по модулю
-                if (number % index == 0 || number % (number - 1) == 0) {
-                    prime = false;
-                    //иначе число простое
-                } else break;
-            }
+        else {
+            for (int index = 2; index < number; index++) {
+            //проверяем числа от 2 до number - 1 делимость по модулю
+            if (number % index == 0) {
+                prime = false;
+                //иначе число простое
+            } else break;
         }
+            }
         return prime;
     }
 }
+
