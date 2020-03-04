@@ -1,20 +1,21 @@
 package ru.job4j.loop;
 
 public class Counter {
-    public static int sum(int start, int finish){
+    public static int sum(int start, int finish) {
         int sum = 0;
         //указываем циклу переменные где начало где конец
-        for (int index = start; index <= finish; index++){
+        for (int index = start; index <= finish; index++) {
             //Сумируем заданный диапозон цикла
             sum = sum + index;
         }
         return sum;
     }
+
     //Метод подсчета суммы четных чисел в заданном диапозоне
-    public static int sumByEven(int start, int finish){
+    public static int sumByEven(int start, int finish) {
         int sum = 0;
         //указываем циклу переменные где начало где конец
-        for (int index = start; index <= finish; index++){
+        for (int index = start; index <= finish; index++) {
             //проверяем четное число или нет
             if (index % 2 == 0)
                 //если число четное то сумируем его
