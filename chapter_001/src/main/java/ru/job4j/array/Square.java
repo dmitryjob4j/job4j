@@ -1,7 +1,12 @@
 package ru.job4j.array;
+
+import org.jetbrains.annotations.Contract;
+import org.jetbrains.annotations.NotNull;
+
 /**
  * Class заполнить массив квадратом чисел в диапозоне до bound
  * и выводит его на экран.
+ *
  * @author dstepanov
  * @version 1
  * @since 07.02.2020
@@ -9,6 +14,7 @@ package ru.job4j.array;
 public class Square {
     /**
      * calculate заполняет масив квадратом чисел.
+     *
      * @param bound - размер масива.
      * @return rst
      */
@@ -22,6 +28,7 @@ public class Square {
 
     /**
      * main вывод на экран результат метода calculate.
+     *
      * @param args - args
      */
     public static void main(String[] args) {
