@@ -17,11 +17,9 @@ public class SwitchArray {
      * @return - возврощает перестановленный массив array
      */
     public static int[] swap(int[] array, int source, int dest) {
-        if (source >= 0 && source <= array.length - 1 && dest >= 0 && dest <= array.length - 1) {
-            int temp = array[source];
-            array[source] = array[dest];
-            array[dest] = temp;
-        }
+        int temp = array[source];
+        array[source] = array[dest];
+        array[dest] = temp;
         return array;
     }
 
