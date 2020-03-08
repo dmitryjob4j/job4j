@@ -4,7 +4,7 @@ package ru.job4j.array;
  * class Turn переворачивает масив.
  *
  * @author dstepanov
- * @version 1
+ * @version 1.1
  * @since 07.03.2020
  */
 public class Turn {
@@ -15,10 +15,7 @@ public class Turn {
     public static int[] back(int[] array) {
         for (int index = 0; index < array.length; index++) {
             int temp = array[index];
-            if (index == 0) {
-                array[index] = array[array.length - 1];
-                array[array.length - 1] = temp;
-            } else if (index < array.length / 2) {
+            if (index < array.length / 2) {
                 array[index] = array[array.length - index - 1];
                 array[array.length - index - 1] = temp;
             } else break;
