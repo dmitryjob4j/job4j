@@ -70,7 +70,7 @@ public class MatrixCheckTest {
     public void whenDataHMonoByTrueThenTrue() {
         char[][] input = {
                 {' ', ' ', ' ', ' ', ' '},
-                {' ', ' ', ' ', ' ', ' '},
+                {' ', ' ', 'X', ' ', ' '},
                 {'X', 'X', 'X', 'X', 'X'},
                 {' ', ' ', 'X', ' ', ' '},
                 {' ', ' ', 'X', ' ', ' '}
