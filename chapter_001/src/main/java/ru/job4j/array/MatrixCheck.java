@@ -43,4 +43,19 @@ public class MatrixCheck {
         }
         return result;
     }
+
+    /**
+     * extractDiagonal - заполняет одномерный масив элементами из
+     * диагонали двумерного массива.
+     *
+     * @param board - задаваемый двумерный масиив.
+     * @return - результат возврощает одномерный массив.
+     */
+    public static char[] extractDiagonal(char[][] board) {
+        char[] rsl = new char[board.length];
+        for (int index = 0; index < board.length; index++) {
+            rsl[index] = board[index][index];
+        }
+        return rsl;
+    }
 }
