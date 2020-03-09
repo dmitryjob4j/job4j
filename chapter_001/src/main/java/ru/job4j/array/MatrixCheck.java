@@ -1,10 +1,11 @@
 package ru.job4j.array;
 
 /**
- * class проверяет заполнена ли символами указанная строка в двумерном массиве.
+ * class проверяет заполнена ли символами указанная строка, столбец в двумерном массиве,
+ * а также заполняет одномерный масив элементами из диагонали двумерного массива, и ищет выигрышный вариат сокобан.
  *
  * @author dstepanov
- * @version 1.1
+ * @version 1.2
  * @since 09.03.2020
  */
 public class MatrixCheck {
@@ -57,5 +58,22 @@ public class MatrixCheck {
             rsl[index] = board[index][index];
         }
         return rsl;
+    }
+
+    /**
+     * isWin - метод проверяет выигрышный или нет расположение 'X' в массиве board.
+     *
+     * @param board - задоваемый массив должен быть квадратным.
+     * @return - возвращает результат поиска.
+     */
+    public static boolean isWin(char[][] board) {
+        boolean result = false;
+        for (int i = 0; i < board.length; i++) {
+            if (board[i][i] == 'X' && (monoHorizontal(board, i) == true || monoVertical(board, i) == true)) {
+                result = true;
+                break;
+            }
+        }
+        return result;
     }
 }
