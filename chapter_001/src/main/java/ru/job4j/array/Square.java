@@ -1,8 +1,5 @@
 package ru.job4j.array;
 
-import org.jetbrains.annotations.Contract;
-import org.jetbrains.annotations.NotNull;
-
 /**
  * Class заполнить массив квадратом чисел в диапозоне до bound
  * и выводит его на экран.
