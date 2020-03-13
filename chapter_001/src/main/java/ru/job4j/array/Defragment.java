@@ -28,7 +28,6 @@ public class Defragment {
                     } else point += 1;
                 }
             }
-            System.out.print(array[i] + " ");
         }
         return array;
     }
