@@ -2,16 +2,18 @@ package ru.job4j.calculator;
 
 /**
  * Class Класс для вычисления арифмитической операции + - * /.
+ *
  * @author dstepanov
- * @since 04.03.2020
  * @version 1
+ * @since 04.03.2020
  */
 public class Calculator {
     /**
      * Main
+     *
      * @param args - args.
      */
-    public static void main(String[] args){
+    public static void main(String[] args) {
         int one = 1;
         int two = 2;
         int six = 6;

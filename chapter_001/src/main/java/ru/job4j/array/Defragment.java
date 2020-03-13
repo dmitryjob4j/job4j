@@ -25,7 +25,9 @@ public class Defragment {
                         array[i] = array[point + 1];
                         array[point + 1] = temp;
                         break;
-                    } else point += 1;
+                    } else {
+                        point += 1;
+                    }
                 }
             }
         }
